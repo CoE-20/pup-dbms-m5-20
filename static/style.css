@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+
+body{background:#ffffff;/*: #25242C;*/}
+#form-wrapper{position: relative; z-index: 9; margin-top: -10px;  }
+#create-form h3{background:#ffffff;}
+.navbar{ padding: 7px 0px; border-bottom:solid 2px #887036; background:#ffffff;}
+
+
+h3{text-align:center; padding-bottom: 5px; padding-top: 5px; color:#887036;}
+.input{padding: 1px 0px; color:#887036; }
+.submit{text-align: center; margin-top:10px;}
+.fa-university{color:#887036;}
+#button-logout-wrapper{/*margin-top:10px;*/ line-height: 4; }
+#button-logout-wrapper{color: #887036}
+.navbar-header i span{line-height: 2; padding-left:10px; font-family: 'Ubuntu', sans-serif;}
+#box-wrapper{z-index:0; margin-top: -475px;}
+#box{width:430px; height:455px; border:solid 1px #887036;}
+.submit{margin-top: 20px;}
+.submit button{padding: 10px 90px;}
+
+
+.welcome-text{line-height: 4; color: #8A7F65 }
+
+hr{height:2px; background-color:#887036; }
+
+form input[type=text] {
+    width: 100%;
+    margin-top: 5px;
+    line-height: 20px;
+}
+form input[type=submit] {
+    margin-top: 5px;
+    position: relative;
+    float: right;
+}

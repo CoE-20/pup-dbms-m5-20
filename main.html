@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Login</title>
+
+    <link type="text/css" href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script type="text/javascript" src='/static/jquery-1.11.3.min.js'></script>
+</head> 
+<body>
+
+<div class = "container-fluid" id= "navigation-wrapper">
+    <div class = "row">
+        <nav class="navbar ">
+            <div class="container">
+                <div class="navbar-header navbar-left">
+                    <i class="fa fa-university fa-2x"><span href = "/">PUP Thesis Database</span></i>
+                </div>
+                <div class="nav navbar-nav navbar-right" id = "button-logout-wrapper">
+                     <a href="{{ url|safe }}" class="btn">{{ url_linktext }}</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class = "container" id = "form-wrapper">
+    <div class = "row">
+        <div class = "col-md-4 col-md-offset-4">
+            <form class = "form-horizontal" role="form" id = "create-form">
+                {% if check == check1 %}
+                <h3>Thesis</h3>
+                <div class = "input">
+                    <label class="control-label" for="year">Year:</label> 
+                    <select  class = "form-control" name="year" id = "input" required>
+                        <option disabled selected>  </option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                    </select>
+                </div>
+
+                <div class = "input"> 
+                    <label class="control-label" for="title">Title:</label>
+                    <input type="text" class="form-control" name = "Title" placeholder="Title" required>
+                </div>
+            
+                <div class = "input">
+                    <label class="control-label" for="abstract" >Abstract:</label> 
+                    <textarea class="form-control" type = "text" rows="4" name = "abstract" placeholder="Abstract" value = "Abstract" required></textarea>
+                </div>
+
+                <div class = "input">
+                    <label class="control-label" for="adviser">Adviser:</label> 
+                    <input type="text" class="form-control" name = "adviser" placeholder="Adviser" required>
+                </div>
+
+                <div class = "input">
+                    <label class="control-label" for="section">Section:</label> 
+                    <select class = "form-control" role= "menu" name="section" id = "input" required>
+                        <option disabled selected> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class = "submit"> 
+                    <button class = "btn btn-default" type="submit" value="Submit">Submit</button>
+                </div>
+                
+            </form>
+        </div>          
+    </div>
+</div>    
+    <br>
+    <br>
+    <hr>
+    <h4>List</h4>
+    <div class='list-section'>
+        <ul id = "thesis-list"> </ul>
+    </div>
+</div>
+{% endif %}
+<script type="text/javascript" src='/static/script.js'></script>
+
+</body>
+</html>
