@@ -16,12 +16,15 @@ h3{text-align:center; padding-bottom: 5px; padding-top: 5px; color:#887036;}
 #box-wrapper{z-index:0; margin-top: -475px;}
 #box{width:430px; height:455px; border:solid 1px #887036;}
 .submit{margin-top: 20px;}
-.submit button{padding: 10px 90px;}
-
-
-.welcome-text{line-height: 4; color: #8A7F65 }
+.submit button{padding: 10px 90px; border-color:#887036;color:#887036; font-weight: bold; }
+.submit button:hover{color:#ffffff; background-color:#887036;  font-weight: bold; transition: all 500ms ease-in-out;}
+.form-control{border-color:#887036;}
+.form-control:focus{ border-color: #887036; outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(148, 14, 14, .9);}
 
 hr{height:2px; background-color:#887036; }
+
+.list-section{text-align: center;}
+ul{list-style-type: none; text-align: left;}
 
 form input[type=text] {
     width: 100%;

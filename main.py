@@ -45,7 +45,7 @@ class EditEntry(webapp2.RequestHandler):
         if user:
 
             url = users.create_logout_url(self.request.uri)
-            url_linktext = 'Logout'  +  ' ' + users.get_current_user().nickname()
+            url_linktext = 'Logout,'  +  ' ' + users.get_current_user().nickname()
             status = 'Hello, '
             template_values = {
             'user': user,

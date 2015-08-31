@@ -39,7 +39,7 @@
                 <div class = "input">
                     <label class="control-label" for="year">Year:</label> 
                     <select  class = "form-control" name="year" id = "input" required>
-                        <option disabled selected>  </option>
+                        <option disabled selected style = "color:#999999;">Year</option>
                         <option value="2011">2011</option>
                         <option value="2012">2012</option>
                         <option value="2013">2013</option>
@@ -66,7 +66,7 @@
                 <div class = "input">
                     <label class="control-label" for="section">Section:</label> 
                     <select class = "form-control" role= "menu" name="section" id = "input" required>
-                        <option disabled selected> </option>
+                        <option disabled selected style = "color:#c0c0c0 !important;">Section</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -85,10 +85,12 @@
     <br>
     <br>
     <hr>
-    <h4>List</h4>
-    <div class='list-section'>
+    <div class='list-section container'>
+        <h3>List</h3>
         <ul id = "thesis-list"> </ul>
     </div>
+    <br>
+    <br>
 </div>
 {% endif %}
 <script type="text/javascript" src='/static/script.js'></script>
